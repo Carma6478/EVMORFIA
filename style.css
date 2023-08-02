@@ -1,0 +1,943 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html, body {
+    background-image: url("Assets/Background.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100%;
+    background-position: center;
+    background-attachment:fixed;
+    
+
+}
+.m{
+    height: 23%;
+}
+.Me{
+    height: 100%;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translate(0%);
+    transition: all 1s;
+}
+
+.show3{
+    opacity: 1;
+    filter:blur(0);
+    transform: translateY(0);
+}
+
+
+.art_section{
+    height: 100%;
+    
+}
+.art_section h1{
+    font-size: 20rem;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding-left: 50px;
+}
+
+
+
+/*transition*/
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translate(-100%);
+    transition: all 1.5s;
+    height: 100%;
+}
+.show{
+    opacity: 1;
+    filter:blur(0);
+    transform: translateX(0);
+}
+
+.hidden2{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translate(100%);
+    transition: all 1.5s;
+    height: 100%;
+}
+.show2{
+    opacity: 1;
+    filter:blur(0);
+    transform: translateX(0);
+}
+
+
+
+
+.center{
+    height: 100%;
+
+}
+
+
+.logo{
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    
+}
+
+
+.center .logo{
+ 
+        width: 40rem;
+
+        margin: auto;
+        margin-top: 10%;
+        align-items: center;
+        justify-content: center;
+        display: block;
+}
+
+
+/*navbar*/
+.navbar{
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    transition: all .50 ease;
+    
+}
+.navbar ul{
+    text-align: center;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding-top: 20px;
+    z-index: 1000;
+
+}
+.navbar ul li a i{
+    font-size: 1.5rem;
+}
+
+
+
+.bars{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-left: 18.5px;
+    margin-bottom: 10px;
+}
+.bars a{
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+    transition: all .50 ease;
+}
+.bars a:hover{
+    color:#24262b;
+    transform: translateY(-10px);
+}
+
+.cont{
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+/*hero*/
+.hero{
+display: flex;
+margin: auto;
+align-items: center;
+justify-content: center;
+transition: all .50 ease;
+height: 100%;
+
+}
+
+.dets{
+padding: 20px 20px;
+color: #e6e6e6;
+}
+.dets h3{
+    font-size: 2rem;
+   
+}
+.dets h1{
+    font-size: 4rem;
+}
+.dets h2{
+    font-size: 3rem;
+}
+
+
+.profile a img{
+    width: 30rem;
+    border-radius: 50%;
+    padding: 50px;
+
+}
+
+/*arts*/
+.Arts{
+display: flex;
+margin: auto;
+height: 50vh;
+align-items: center;
+justify-content: center;
+transition: all .50 ease;
+
+}
+
+.Artz a img{
+    width: 18rem;
+    transition: all 0.3s ease;
+}
+
+.Artz a img:hover{
+    width: 40rem;
+    padding: 10%;
+    background-size: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+
+
+.details{
+    font-size: 0.8rem;
+    width: 40%;
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #fff;
+
+}
+/*contacts*/
+.contact_Section{
+ height: 100%; 
+ display: flex;
+ margin: auto;
+ height: 100vh;
+ align-items: center;
+ justify-content: center;
+ transition: all .50 ease;
+ background: rgba(0, 0, 0, 0.5);
+ backdrop-filter: blur(10px);
+ width: 100%;
+}
+.contact-info{
+color: #fff;
+max-width: 500px;
+line-height: 65px;
+padding-left: 50px;
+font: 4.2rem;
+}
+.contact-info i{
+    margin-right: 20px;
+    font-size: 1.8rem;
+}
+.contact-form{
+    max-width: 700px;
+    margin-right: 50px;
+
+}
+.contact-info, .contact-form{
+    flex: 1;
+}
+.contact-form h1{
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.contact-form .text-box{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    height: 50px;
+    padding: 12px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.contact-form .text-box:first-child{
+    margin-right: 15px;
+}
+.contact-form textarea{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.5rem;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.contact-form .send-btn{
+    float: right;
+    background: #000;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    color: #fff;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+.contact-form .send-btn:hover{
+    color: #000;
+    background: #fff;
+    opacity: 0.9;
+}
+
+/*for the allert*/
+.alert-success{
+    z-index: 1000;
+    background-color: #dfebf6;
+    font-size: 1.5rem;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 100px;
+    border-left: 8px solid #aac7d8;
+}
+
+.alert-error{
+    z-index: 1000;
+    background-color: #fff3cd;
+    font-size: 1.5rem;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 100px;
+    border-left: 8px solid #ffa502;
+}
+
+/* footer*/
+.container{
+    max-width:  1170px;
+    background-color: #44576d;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #44576d;
+    padding: 70px 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 15em;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 12px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #768a96;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #aac7d8;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #fff;
+    padding-left: 10px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: transform 0.5s ;
+    
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #fff;
+    transform: translateY(-10px);
+}
+
+
+@media (max-width: 1750px) {
+    .art_section h1{
+        font-size: 15rem;
+    }
+    .Artz a img{
+        width: 9rem;
+
+    }
+    .Artz a img:hover{
+        width: 20rem;
+
+    }
+    
+}
+
+@media(max-width: 1280px){
+
+
+    .dets h3{
+        font-size: 1rem;
+       
+    }
+    .dets h1{
+        font-size: 2rem;
+    }
+    .dets h2{
+        font-size: 1.5rem;
+    }
+    
+    
+    .profile a img{
+        width: 20rem;
+
+    
+    }
+
+    .Artz a img{
+        width: 9rem;
+
+    }
+    
+    .Artz a img:hover{
+        width: 20rem;
+
+    }
+    
+    .details{
+        font-size: 0.6rem;
+    }
+    
+    .m{
+        height: 13%;
+    }
+
+    .art_section h1{
+        font-size: 10rem;
+    }
+
+}
+
+@media(max-width: 1099px){
+    .details{
+        font-size: 0.5rem;
+    }
+}
+
+@media(max-width: 960px){
+    .art_section h1{
+        font-size: 8rem;
+    }
+    .details{
+        font-size: 0.4rem;
+    }
+    .navbar ul li a i{
+        font-size: 0.8rem;
+    }
+    .bars{
+        padding-top: 1px;
+        padding-bottom: 10px;
+        margin-left: 1px;
+        margin-bottom: 5px;
+    }
+    .navbar ul{
+        padding-top: 5px;
+    }
+}
+
+@media(max-width: 768px){
+    
+
+    
+
+    .dets h3{
+        font-size: 1rem;
+       
+    }
+    .dets h1{
+        font-size: 2rem;
+    }
+    .dets h2{
+        font-size: 1.5rem;
+    }
+    
+    
+    .profile a img{
+        width: 20rem;
+    }
+
+    .Artz a img{
+        width: 10rem;
+
+    }
+    
+    .Artz a img:hover{
+        width: 20rem;
+
+    }
+    
+    .details{
+        font-size: 0.48rem;
+    }
+    
+    .m{
+        height: 8%;
+    }
+
+    .art_section h1{
+        font-size: 6rem;
+    }
+
+
+
+    /*contact*/
+    .contact-info{
+        font-size: 0.8rem;
+         padding-right: 50px;
+         border-radius: 10px;
+         padding-top: 10px;
+    }
+    .contact-info i{
+        font-size: 1.5rem;
+    }
+
+    .contact-info, .contact-form{
+        margin: 5px 5px;
+        padding: 10px;
+    }
+    .contact-form h1{
+        font-size: 1rem;
+    }
+    .contact-form .text-box{
+        width: 100%;
+        height: 1rem;
+    }
+      
+       .contact-form .text-box{
+        
+           font-size: 0.5rem;
+
+       }
+       
+       .contact-form .text-box:first-child{
+           margin-right: 15px;
+       }
+       .contact-form textarea{
+           background: #000;
+           color: #fff;
+           border: none;
+           width: 100%;
+           padding: 12px;
+           font-size: 0.5rem;
+           min-height: 100px;
+           resize: vertical;
+       }
+       
+       .contact-form .send-btn{
+
+           width: 80px;
+           height: 30px;
+           font-size: 0.5rem;
+        
+       }
+       
+       .contact-form .send-btn:hover{
+           color: #000;
+           background: #fff;
+           opacity: 0.9;
+       }
+
+
+    
+
+
+    /*footer*/
+    .footer-col{
+        width: 50%;
+        margin: 30px;
+    }
+}
+
+@media(max-width: 640px){
+    .center .logo{
+        width: 20rem;
+        padding: 10px;
+    }
+
+    
+    .dets h3{
+        font-size: 0.8rem;
+       
+    }
+    .dets h1{
+        font-size: 1.2rem;
+    }
+    .dets h2{
+        font-size: 0.8rem;
+    }
+    
+    
+    .profile a img{
+        width: 15rem;
+    }
+
+    .Artz a img{
+        width: 10rem;
+
+    }
+    
+    .Artz a img:hover{
+        width: 20rem;
+
+    }
+    
+    .details{
+        font-size: 0.42rem;
+    }
+    
+    .m{
+        height: 13%;
+    }
+
+    .art_section h1{
+        font-size: 4rem;
+    }
+
+    .contact-info{
+        font-size: 0.5rem;
+         padding-right: 50px;
+         border-radius: 10px;
+         padding-top: 10px;
+    }
+    .contact-info i{
+        font-size: 1.5rem;
+    }
+
+    .contact-form .send-btn{
+
+        width: 60px;
+        height: 20px;
+        font-size: 0.4rem;
+     
+    }
+}
+
+
+@media(max-width: 480px){
+    
+
+    .navbar ul li a i{
+        font-size: 0.6rem;
+    }
+    .bars{
+        padding-top: 1px;
+        padding-bottom: 5px;
+        margin-left: 0.5px;
+        margin-bottom: 5px;
+    }
+    .navbar ul{
+        padding-top: 0.5px;
+    }
+
+
+    .center .logo{
+        width: 15rem;
+        padding: 5px;
+    }
+    
+    .dets h3{
+        font-size: 0.6rem;
+       
+    }
+    .dets h1{
+        font-size: 1rem;
+    }
+    .dets h2{
+        font-size: 0.8rem;
+    }
+    
+    
+    .profile a img{
+        width: 12rem;
+    }
+
+    .Artz a img{
+        width: 4rem;
+
+    }
+    
+    .Artz a img:hover{
+        width: 10rem;
+
+    }
+    
+    .details{
+        font-size: 0.26rem;
+    }
+    
+    .m{
+        height: 8%;
+    }
+
+    .art_section h1{
+        font-size: 2rem;
+    }
+
+
+
+    /*contact*/
+
+    .contact-info{
+        font-size: 0.4rem;
+         padding-right: 50px;
+         border-radius: 10px;
+         padding-top: 10px;
+    }
+    .contact-info i{
+        font-size: 1rem;
+    }
+
+    .contact-info, .contact-form{
+        margin-bottom: 10px;
+        padding: 10px;
+
+    }
+    .contact-form h1{
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .contact-form .text-box{
+        width: 100%;
+        height: 0.4rem;
+        margin-bottom: 10px;
+
+    }
+      
+       .contact-form .text-box{
+        
+           font-size: 0.2rem;
+
+       }
+       
+       .contact-form .text-box:first-child{
+           margin-right: 15px;
+       }
+       .contact-form textarea{
+           border: none;
+           width: 100%;
+           padding: 5px;
+           font-size: 0.5rem;
+           min-height: 50px;
+           resize: vertical;
+           margin-bottom: 10px;
+       }
+       
+       .contact-form .send-btn{
+
+           width: 60px;
+           height: 20px;
+           font-size: 0.4rem;
+        
+       }
+       
+    
+    .footer-col{
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 384px){
+    .navbar ul li a i{
+        font-size: 0.8rem;
+    }
+    .bars{
+
+        padding-bottom: 5px;
+        margin-left: 0.5px;
+
+    }
+
+    .dets h3{
+        font-size: 0.4rem;
+       
+    }
+    .dets h1{
+        font-size: 0.7rem;
+    }
+    .dets h2{
+        font-size: 0.5rem;
+    }
+    
+    
+    .profile a img{
+        width: 10rem;
+    }
+
+    .Artz a img{
+        width: 3rem;
+
+    }
+    
+    .Artz a img:hover{
+        width: 7rem;
+
+    }
+    
+    .details{
+        font-size: 0.18rem;
+    }
+    
+
+    .art_section h1{
+        font-size: 1rem;
+    }
+
+
+
+    /*contact*/
+
+    .contact-info{
+        font-size: 0.4rem;
+         padding-right: 50px;
+         border-radius: 10px;
+         padding-top: 10px;
+    }
+    .contact-info i{
+        font-size: 1rem;
+    }
+
+    .contact-info, .contact-form{
+        margin-bottom: 10px;
+        padding: 10px;
+
+    }
+    .contact-form h1{
+        font-size: 1rem;
+        margin-bottom: px;
+    }
+    .contact-form .text-box{
+        width: 100%;
+        height: 0.4rem;
+        margin-bottom: 10px;
+
+    }
+      
+       .contact-form .text-box{
+        
+           font-size: 0.2rem;
+
+       }
+       
+       .contact-form .text-box:first-child{
+           margin-right: 15px;
+       }
+       .contact-form textarea{
+           border: none;
+           width: 100%;
+           padding: 5px;
+           font-size: 0.5rem;
+           min-height: 50px;
+           resize: vertical;
+           margin-bottom: 10px;
+       }
+       
+       .contact-form .send-btn{
+
+           width: 60px;
+           height: 20px;
+           font-size: 0.4rem;
+        
+       }
+}
